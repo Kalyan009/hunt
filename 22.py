@@ -1,8 +1,9 @@
-c=int(input())
-n=input();
-n=list(map(str,no.split(" ")))
-n.sort()
-n=n[::-1]
-n="".join(map(str,n))
-n=int(n)
-print(no)
+p=int(input())
+a=input();flag=0
+a=list(map(int,a.split(" ")))
+for n in range(p):
+	if (n==a[n]):
+		flag=1
+		print(n,end=" ")
+if (flag==0):
+	print("-1")
